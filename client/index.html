@@ -1,0 +1,38 @@
+<head>
+   <title>Meteor on Nitrous.IO</title>
+ </head>
+ <body>
+ <div class="navbar navbar-inverse navbar-fixed-top">
+       <div class="navbar-inner">
+         <div class="container">
+           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+           <a class="brand" href="#">Hello, Meteor</a>
+           <div class="nav-collapse collapse">
+             <ul class="nav">
+               <li class="active"><a href="#">Home</a></li>
+               <li><a href="http://chilismaug.github.io" target="_blank">Github</a></li>
+               <li><a href="https://www.linkedin.com/in/charlesaross" target="_blank">LinkedIn</a></li>
+               <li><a href="http://safe-spire-3627.herokuapp.com/" target="_blank">Hello Heroku</a></li>
+             </ul>
+           </div><!--/.nav-collapse -->
+         </div>
+       </div>
+     </div>
+     <div class="container">
+       {{#if currentUser}}
+       <h2>You are now logged in.</h2>
+       {{else     }}
+       <h1>Login to continue</h1>
+       {{/if}}  
+       <p>
+         {{> loginButtons}}
+       </p>
+    </div>
+
+
+</body>
